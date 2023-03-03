@@ -31,7 +31,6 @@
 			// vscode extensions to install
 			"extensions": [
 				// Personal Extensions
-				"ms-azuretools.vscode-docker",
 				"ms-ceintl.vscode-language-pack-es",
 				"gruntfuggly.todo-tree",
 				"shardulm94.trailing-spaces",
