@@ -23,8 +23,8 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "zsh ./.devcontainer/postCreateCommand.sh",
-
+	"postCreateCommand": "sudo apt update && sudo apt install zsh -y && zsh ./.devcontainer/postCreateCommand.sh",
+	
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
@@ -52,14 +52,19 @@
 				"chekweitan.compare-view",
 				"streetsidesoftware.code-spell-checker",
 				"formulahendry.auto-complete-tag",
+				"ms-azuretools.vscode-docker",
 				// Specific Extensions
 				"rust-lang.rust-analyzer",
 				"mutantdino.resourcemonitor",
 				"tamasfe.even-better-toml",
 				"serayuzgur.crates",
 				"vadimcn.vscode-lldb"
-
-			]
+			],
+			// vscode settings to override
+			"settings": {
+				// Configure the default terminal in vscode
+				"terminal.integrated.defaultProfile.linux": "zsh"
+			}
 		}
 	}
 
