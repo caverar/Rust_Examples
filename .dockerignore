@@ -3,6 +3,7 @@
 .dockerignore
 .gitignore
 .git
+R0_TEST/target
 Dockerfile
 LICENSE
 README.md
